@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 
+// component is a function
+// almost always return something in the function (usually a jsx template)
 function App() {
+  const title = 'Testing React Project';
+  const count = 1;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='content'>
+        <h1>{title}</h1>
+        <p>{count}</p>
+
+        <p>{10}</p>
+        <p>{ [1,2,3,4]}</p>
+        <p>{ 'green' }</p>
+
+        
+      </div>
     </div>
   );
 }
 
+// export the component (aka 'App')
 export default App;
